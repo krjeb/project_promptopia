@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 
 import Profile from "@/components/Profile";
 
-const UserProfile = () => {
+const UserProfileView = () => {
   const params = useParams();
   const userId = params?.id; // Extract to a primitive variable
   const searchParams = useSearchParams();
@@ -32,5 +32,11 @@ const UserProfile = () => {
     />
   );
 };
+
+const UserProfile = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <UserProfileView />
+  </Suspense>
+);
 
 export default UserProfile;

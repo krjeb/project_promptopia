@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 import Form from "@/components/Form";
 
-const UpdatePrompt = () => {
+const UpdatePromptForm = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const promptId = searchParams.get("id");
@@ -64,5 +64,11 @@ const UpdatePrompt = () => {
     />
   );
 };
+
+const UpdatePrompt = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <UpdatePromptForm />
+  </Suspense>
+);
 
 export default UpdatePrompt;
