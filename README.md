@@ -11,7 +11,7 @@ Built with the Next.js App Router, React, Tailwind CSS, NextAuth.js, and MongoDB
 
 ## Acknowledgement & Credits
 
-- **Original Project Tutorial:** Built following the full-stack MERN tutorial by [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) ([Watch on YouTube])(https://youtu.be/wm5gMKuwSYk?si=F2AkHSO6SppkiHUE).
+- **Original Project Tutorial:** Built following the full-stack MERN tutorial by [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) ([Watch on YouTube](https://youtu.be/wm5gMKuwSYk?si=F2AkHSO6SppkiHUE)).
 
 ## Key Improvements & Refactoring (Beyond the Tutorial)
 
